@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <title>
+                </title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="row">
+          <div class="user-form col-md-6">
+              <form style="width:60%;margin:0 auto;margin-top:10%" onsubmit="send()">
+                  <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" id="url" placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Eth address</label>
+                        <input type="text" class="form-control" id="ethaddr" placeholder="Enter ETH address" required>
+                      </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <input type="text" class="form-control" id="pkey" placeholder="Enter private key" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br/>
+                <p class="json"></p>
+          </div>
+          <div class="col-md-6">
+            <div style="width:60%;margin:0 auto;margin-top:10%">
+                <h4>See the previous stored JSON in the contract</h4>
+                <button class="btn btn-secondary text-center" onclick="getJson()">Get JSON</button>
+                <p class="json" style="overflow-y:scroll"></p>
+            </div>
+          </div>
+        </div>
+          <script src="js/logic.js"></script>
+    </body>
+</html>
